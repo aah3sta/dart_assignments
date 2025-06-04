@@ -59,7 +59,7 @@ void main(){
 
   //Uses if-else statements to check if a number is positive, negative, or zero. 
 
- int number = 42; // You can change this value for testing
+ int number = 42;
 
   //Check if the number is positive, negative, or zero
   if (number > 0) {
