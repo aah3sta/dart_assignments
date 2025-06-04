@@ -53,7 +53,47 @@ void main(){
 
   //A while loop that prints numbers from 10 to 1.
   printCountdown();
+
+  // A do-while loop that prints numbers from 1 to 5.
+  printUpward();
+
+  //Uses if-else statements to check if a number is positive, negative, or zero. 
+
+ int number = 42; // You can change this value for testing
+
+  //Check if the number is positive, negative, or zero
+  if (number > 0) {
+    print('$number is positive');
+  } else if (number < 0) {
+    print('$number is negative');
+  } else {
+    print('The number is zero');
+  }
+
+  //Check if the number is even or odd
+  if (number % 2 == 0) {
+    print('$number is even');
+  } else {
+    print('$number is odd');
+  }
+
+  //Categorize the number using a switch
+  switch (true) {
+    case true when number >= 1 && number <= 10:
+      print('$number is a small number');
+      break;
+    case true when number >= 11 && number <= 100:
+      print('$number is a medium number');
+      break;
+    case true when number > 100:
+      print('$number is a large number');
+      break;
+    default:
+      print('$number is out of categorized range');
+  }
 }
+
+
 
 //Function for Conversion: Write a function convertAndDisplay that: Takes a String representing a number. Converts the String to int and double. Prints the results.
 void convertAndDisplay(String numString){
@@ -71,11 +111,11 @@ void printCountdown() {
   }
 }
 
-
-//1. Uses if-else statements to check if a number is positive, negative, or zero. 
-
-
-
 // A do-while loop that prints numbers from 1 to 5.
-
-//2. Use if-else statements to check if the number is even or odd. Implements a switch statement to categorize numbers into "small" (1-10), "medium" (11-100), or "large" (101+).
+void printUpward() {
+  int j = 1;
+  do {
+    print(j);
+    j++;
+  } while (j <= 5);
+}
