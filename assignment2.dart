@@ -35,15 +35,8 @@ void main(){
   int factDiscount = factorial(itemCount) % 10; // Keep discount reasonable
   print('Factorial Discount (%): $factDiscount');
 
+    //Display Final Price after all calculations.
   double finalTotal = totalWithTax * (1 - factDiscount / 100);
   print('Final Price after Factorial Discount: \$${finalTotal.toStringAsFixed(2)}');
     
 }
-//Filter Items: Remove items below $10 using an anonymous function.
-//Apply Discount: Use a higher-order function to reduce prices by a percentage.
-
-//Calculate Total: Compute the final price with an optional tax.
-
-//Factorial Discount: Apply an extra discount based on the factorial of item count.
-
-//Display Final Price after all calculations.
